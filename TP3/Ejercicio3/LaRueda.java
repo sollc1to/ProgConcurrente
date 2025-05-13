@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package TP3.Ejercicio3;
+
+/**
+ *
+ * @author PC
+ */
+public class LaRueda {
+
+    public LaRueda(){
+    }
+
+    public synchronized void correr(String nombre) {
+      
+        try {
+              System.out.println("El hamster " + nombre + " esta corriendo..");
+            Thread.sleep(250);
+
+        } catch (InterruptedException e) {
+            System.out.println("");
+        }
+        System.out.println("El hamster " + nombre + " terminó de correr");
+    }
+
+}
